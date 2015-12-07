@@ -1,0 +1,6 @@
+AppElvis
+
+App ID:  171008926439486 
+App Secret:  49bc6b0038f16843308782d61791fe09(reset)  
+
+namespace:elvislee

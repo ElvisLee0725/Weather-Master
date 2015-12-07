@@ -1,0 +1,5 @@
+Facebook:記得要在應用程式/編輯設定/請選擇你的應用程式如何根FB結合/URL/http://cs-server.usc.edu:23455/examples/HW_8/weather_search.html
+這樣才能PO文!
+
+AWS:
+每次上傳php, 一定要先改檔名index.php, 壓縮, 然後才上傳 (Version label不同即可)

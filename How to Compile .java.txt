@@ -1,0 +1,37 @@
+1.After upload MyServlet.java through FTP, the first thing is to compile it:
+
+javac -classpath $CATALINA_HOME/common/lib/servlet.jar MyServlet.java
+OR
+javac -classpath $CATALINA_HOME/common/lib/servlet.jar:$CATALINA_HOME/common/lib/jdom-1.1.3.jar
+----------------------------------------------------------------------------------------------
+直接加環境變數:
+在根目錄下，emacs .cshrc
+setenv CLASSPATH $CATALINA_HOME/common/lib/servlet.jar:$CATALINA_HOME/common/lib/jdom-1.1.3.jar
+
+完成後記得source .cshrc才會生效
+
+以後只要: javac xxx.java即可compile
+
+2.After compile, remember to restart server:
+restart Tomcat:
+cd $CATALINA_HOME/bin/ 
+shutdown.sh 
+startup.sh
+
+cd ../webapps/examples/WEB-INF/classes
+
+http://where.yahooapis.com/v1/places$and(.q('Los+Angeles,+CA,+USA'),.type(7));start=0;count=1?appid=MYAPPID 
+
+
+
+你要在你要compile的資料夾
+
+然後加入環境變數
+.
+
+setenv CLASSPATH $CATALINA_HOME/common/lib/servlet.jar:$CATALINA_HOME/common/lib/jdom-1.1.3.jar
+
+這樣compile比較方便
+
+
+javac -classpath 檔名.java

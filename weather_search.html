@@ -1,0 +1,60 @@
+<html>
+	<header>	
+		
+		<!-- <link rel="stylesheet" href="http://yui.yahooapis.com/3.13.0/build/cssbutton.css"> -->
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="yui-min.js"></script>
+
+		<script src="http://yui.yahooapis.com/3.13.0/build/yui/yui-min.js"></script>  <!--// For YUI -->
+		<script type="text/javascript" src="my_script.js"></script>	
+<!--		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+			$('#location').focus(function(){
+					var field=$(this);
+					if(field.val()==field.attr('defaultValue')){
+						field.val('');
+					}
+				});
+		</script>-->	
+		<style>
+			form#form{color: #FFFFFF}
+			#info{font-size: 50px; color: #FFFFFF; padding-left: 10px}
+			#city{font-size: 40px; color: #FFFFFF; padding-left: 10px}
+			#country{font-size: 15px; color: #FFFFFF; padding-bottom: 30px; padding-left: 10px}
+			#image{color: #FFFFFF; padding-left: 10px}
+			#low_high{color: #FFFFFF; padding-left: 10px}
+			div.yui3-skin-sam{background:#000000}
+			div#temp_now{font-size: 80px ;color: #FFFFFF; float:left; padding-top: 60px; padding-left: 10px; padding-right: 40px}
+			div#forecast_table{float:left; color: #FFFFFF; font-weight: bold; padding-right: 40px}
+			div#fb{float:left; padding-top: 50px}
+			div#yahoo_link{float:right; padding-top: 180px}
+
+		</style>
+	</header>
+		<body background="bg4.jpg" class="yui3-skin-sam">
+
+			<form id="form" name="searchform">
+				Location:&nbsp; <input type="text" name="location" size="50" value="Enter city or zip code">
+			
+				<input type="button" name="search" value="Search" onClick="WeatherRequest(); return false;">
+			</form>
+			
+			<p><div id="info"> </div></p>
+			<p><div id="city"> </div></p>
+			<div id="country"> </div>
+			<div id="image"> </div>
+			<div id="low_high"> </div>
+			
+
+			<p><div id="dynamic"> 
+				<div id="temp_now"> </div>
+				<div id="forecast_table"> </div>
+				<div id="fb"> </div>
+			</div></p>
+			<p><div id="yahoo_link"> </div></p>
+			
+			
+	
+		<noscript>
+		</body>
+</html>
+	
